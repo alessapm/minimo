@@ -1,0 +1,300 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.master-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  color: rgba(1,1,1,.8);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  padding-left: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14pt;
+  transition: all .5s;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: rgba(1,1,1,0.55);
+}
+
+.main-pic {
+  background-image: url("post-main.png");
+  background-size: 100% 100%;
+  height: 509px;
+  width: 100%;
+}
+
+h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: rgba(1,1,1,0.35);
+  font-size: 14pt;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: rgba(1,1,1,0.55);
+  font-size: 30pt;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: rgba(1,1,1,0.55);
+  font-size: 14pt;
+  line-height: 30px;
+}
+
+.comment {
+  color: rgba(1,1,1,0.35);
+  font-size: 14pt;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#main-post {
+  padding: 50px;
+}
+
+.secondary-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.secondary {
+  width: 500px;
+  margin: 25px;
+}
+
+.secondary img {
+  width: 100%;
+}
+
+#signup {
+  background-color: rgba(1,1,1,0.05);
+  height: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#signup-wrapper{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  border-bottom: 1px solid black;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: rgba(1,1,1,0.005);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+
+form button {
+
+  border: none;
+  background-color: rgba(1,1,1,0.005);
+  cursor: pointer;
+  height: 53px;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(1,1,1,0.05);
+  height: 170px;
+
+
+}
+
+footer img {
+  height: 24px;
+  width: 23px;
+}
+
+.footer-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#terms {
+  display: flex;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+#terms p {
+  color: rgba(1,1,1,.8);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+#follow {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#follow p, img{
+  color: rgba(1,1,1,.8);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+#terms p:hover {
+  transform: translateY(-5px);
+}
+
+#follow p:hover {
+  transform: translateY(-5px);
+}
+
+#follow img:hover {
+  transform: translateY(-5px);
+}
+
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+h2:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1180px){
+  .main-pic {
+    height: 400px;
+  }
+
+  .secondary-posts {
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+  }
+
+  h1 {
+     padding-left: 15px;
+  }
+
+  ul {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 700px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  ul {
+    padding: 0;
+    width: 400px;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 20pt;
+  }
+
+  #main-post {
+    text-align: center;
+
+  }
+
+  .secondary-posts {
+    text-align: center;
+  }
+
+  .secondary {
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  .master-container {
+    width: 400px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+ .footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
