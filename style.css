@@ -103,7 +103,7 @@ p {
 }
 
 .secondary {
-  width: 500px;
+  max-width: 500px;
   margin: 25px;
 }
 
@@ -242,6 +242,10 @@ h2:hover {
 
   }
 
+  .secondary img {
+    width: 100%;
+  }
+
   h1 {
      padding-left: 15px;
   }
@@ -253,8 +257,12 @@ h2:hover {
 
 @media (max-width: 700px){
 
+  .container {
+    width: 100%;
+  }
+
   html {
-    width: 600px;
+    /*width: 600px;*/
     margin: 0;
     padding: 0;
   }
@@ -302,7 +310,8 @@ h2:hover {
   }
 
   #signup {
-    width: 600px;
+    /*width: 600px;*/
+    width: 100%;
   }
 
   footer {
@@ -312,8 +321,13 @@ h2:hover {
 }
 
 @media (max-width: 450px) {
+
+  .container {
+    width: 100%;
+  }
+
   .master-container {
-    width: 400px;
+    width: 100%;
   }
 
   .secondary {
@@ -324,6 +338,10 @@ h2:hover {
 
   footer {
     height: 200px;
+  }
+
+  li {
+    font-size: 1rem;
   }
 
 
