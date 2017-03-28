@@ -236,6 +236,12 @@ h2:hover {
     padding: 0;
   }
 
+  .secondary {
+    padding: 0;
+    margin: 0;
+
+  }
+
   h1 {
      padding-left: 15px;
   }
@@ -246,6 +252,18 @@ h2:hover {
 }
 
 @media (max-width: 700px){
+
+  html {
+    width: 600px;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
   nav {
     flex-direction: column;
     align-items: center;
@@ -254,7 +272,7 @@ h2:hover {
 
   ul {
     padding: 0;
-    width: 400px;
+    width: 90%;
   }
 
   li {
@@ -267,19 +285,29 @@ h2:hover {
 
   #main-post {
     text-align: center;
+    padding: 0;
 
   }
 
   .secondary-posts {
     text-align: center;
+    width: 100%;
+    padding: 0;
   }
 
   .secondary {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0;
+    margin: 0;
 
   }
 
+  #signup {
+    width: 600px;
+  }
+
+  footer {
+    padding: 0;
+  }
 
 }
 
@@ -288,9 +316,16 @@ h2:hover {
     width: 400px;
   }
 
+  .secondary {
+    padding: 0;
+    margin: 0;
+
+  }
+
   footer {
     height: 200px;
   }
+
 
  .footer-container {
     flex-direction: column;
