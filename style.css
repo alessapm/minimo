@@ -239,6 +239,7 @@ h2:hover {
   .secondary {
     padding: 0;
     margin: 0;
+    width: 100%;
 
   }
 
@@ -262,7 +263,7 @@ h2:hover {
   }
 
   html {
-    /*width: 600px;*/
+
     margin: 0;
     padding: 0;
   }
@@ -300,13 +301,19 @@ h2:hover {
   .secondary-posts {
     text-align: center;
     width: 100%;
+    flex-direction: column;
+    align-content: center;
     padding: 0;
   }
 
   .secondary {
     padding: 0;
     margin: 0;
+    width: 100%;
+  }
 
+  .secondary img {
+    width: 100%;
   }
 
   #signup {
@@ -333,7 +340,7 @@ h2:hover {
   .secondary {
     padding: 0;
     margin: 0;
-
+    width: 100%;
   }
 
   footer {
